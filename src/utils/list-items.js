@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable-loop */
 /**
  * Converts an array if items into a string list.
  *
@@ -14,10 +15,10 @@
  *
  */
 
-let addingNumber = '';
-export const listItems = (array) => {
-  for (let element of array) {
+export const listItems = (numbers) => {
+  let addingNumber = '';
+  for (const element of numbers) {
     addingNumber += `# ${element}\n`;
-    return addingNumber;
   }
+  return addingNumber;
 };
